@@ -1,0 +1,275 @@
+@charset "utf-8";
+
+/* ========================================
+    リセットcss
+========================================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style:normal;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+    font-family: "Roboto";
+}
+
+// トップページここから
+
+.top-wrapper {
+   display: flex;
+    height: 100%;
+}
+
+.left {
+    width: 82vw;
+}
+
+// ヘッダーここから
+
+.l-header {
+    width: auto;
+    height: 217px;
+    background-color: #fff7ef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 0;
+    &__logo {
+        width: 325px;
+        height: 84px;
+        font-size: 4rem;
+        font-weight: bold;
+        color: #707070;
+        margin-left: 65px;
+    }
+}
+
+.c-search {
+    margin-right: 30px;
+    display: flex;
+    & input {
+        width: 396px;
+        height: 44px;
+        margin-right: 14px;
+        border: 1px solid #707070;
+        border-radius: 10px;
+    }
+    &__btn {
+        width: 136px;
+        height: 46px;
+        background-color: #F2EDE9;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        text-align: center;
+        a {
+            text-decoration: none;
+            color: #707070;
+            font-size: 1rem;
+            line-height: 46px;
+            display: inline-block;
+        }
+
+        
+    }
+}
+
+
+.c-search input {
+  background: url(/img/search2.svg) no-repeat 10px ;
+  background-color: #fff;
+  background-size: 6%;
+  
+}
+
+
+// メインコンテンツここから
+
+.main-content {
+    display: flex;
+    width: auto;
+    padding: 120px 0 134px 0;
+}
+
+.thumbnail img {
+    width: 82vw;
+    vertical-align: bottom;
+}
+
+.article-wrap {
+    width: 625px;
+    font-family: "M+ 1m";
+
+    &--takeout {
+        background-image: url(/img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png);
+        background-size: cover;
+        width: 40%;
+        margin: 0 80px 0 111px
+    }
+    &--eatin {
+        width: 40%;
+        background-image: url(/img/component.png);
+        background-size: cover;
+    }
+    &__heading {
+        color: #EAEAEA;
+        font-size: 3.75rem;
+        font-weight: bold;
+        letter-spacing: 3px;
+        margin: 20px 0 0 19px;
+        position: relative;
+        &::before {
+            content:"";
+            position: absolute;
+            border: 1.5px solid #fff;
+            bottom: -35px;
+            left: 0;
+            width: 60px;
+        }
+    }
+    &__text {
+        background-color: #fff;
+        opacity: 0.8;
+        color: #3c2a10;
+        margin: 0 20px 20px 20px;
+        padding: 20px 45px 34px 19px;
+        &-heading {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 28px;
+        }
+        &-sentence {
+            font-size: 1rem;
+            font-weight: normal;
+            }
+        }
+    }
+    .article-wrap2 {
+        margin-top: 679px;
+    }
+
+    // マップエリアここから
+    .map-wrap {
+        width: 82vw;
+        height: 649px;
+        font-family: "M+ 1m";
+        position: relative;
+    &__bg {
+        background-image: url(/img/googlemap.png);
+        opacity: 0.9;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        }
+        &__text {
+            width: 60%;
+            height: auto;
+            background-color: #000000;
+            opacity: 0.6;
+        }
+        &__text__area {
+            width: 80%;
+            margin: 0 auto;
+            height: 649px;
+        }
+        &__text__heading {
+            color: white;
+            font-size: 2.25rem;
+            font-weight: bold;
+            font-family: M+ 1m;
+            padding-top: 90px;
+        }
+        &__text__sentence {
+            color: white;
+            margin-top: 100px;
+            font-size: 1rem;
+            line-height: 2rem;
+            font-weight: normal;
+        }
+    }
+
+    // フッターここから
+    .l-footer {
+        background-image: url(/img/rayer.png);
+        text-align: center;
+        vertical-align: middle;
+        height: 150px;
+        color: #ffffffff;
+        font-family: "M+ 1m";
+        &-wrap {
+            display: flex;
+            justify-content: center;
+            padding-top: 43px;
+            font-size: 1.25rem;
+            font-weight: normal;
+            line-height: 1;
+        }
+        &__info {
+            padding-right: 10px;
+        }
+        &__history {
+            border-left: 1px solid #ffffffff;
+            padding-left: 10px;
+        }
+    }
+
+    .copyright {
+        margin-top: 39px;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 1;
+    }
+
+    // サイドメニューここから
+    .l-sidemenu {
+        background-color: #F2EDE9;
+        width: 18vw;
+        min-height: 100%;
+        &__heading {
+            font-size: 34px;
+            color: #707070;
+            margin: 86px 0 87px 50px;
+        }
+        &__title {
+            font-size: 24px;
+            color: #707070;
+            font-family: "M+1m";
+            margin: 0 0 40px 49px;
+        }
+        &__list {
+            font-size: 20px;
+            font-weight: normal;
+            font-family: "M+1m";
+            color: #707070;
+            list-style: none;
+            margin:0 0 30px 66px;
+            line-height: 1;
+            &:last-child {
+                margin-bottom: 56px;
+            }
+        }
+    }
+
+
+
+    
