@@ -97,7 +97,7 @@ html {
 
 
 .c-search input {
-  background: url(/img/search2.svg) no-repeat 10px ;
+  background: url(../img/search2.svg) no-repeat 10px ;
   background-color: #fff;
   background-size: 6%;
 }
@@ -132,14 +132,14 @@ html {
     font-family: "M+ 1m";
     box-sizing: border-box;
     &--takeout {
-        background-image: url(/img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png);
+        background-image: url(../img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png);
         background-size: cover;
         width: 40%;
         margin: 0 5% 0 7%;
     }
     &--eatin {
         width: 40%;
-        background-image: url(/img/component.png);
+        background-image: url(../img/component.png);
         background-size: cover;
         
     }
@@ -191,7 +191,7 @@ html {
     font-family: "M+ 1m";
     position: relative;
 &__bg {
-    background-image: url(/img/googlemap.png);
+    background-image: url(../img/googlemap.png);
     opacity: 0.9;
     background-size: contain;
     background-color: #000;
@@ -229,7 +229,7 @@ html {
 
 // フッターここから
 .l-footer {
-    background-image: url(/img/rayer.png);
+    background-image: url(../img/rayer.png);
     text-align: center;
     vertical-align: middle;
     height: 150px;
