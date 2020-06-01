@@ -33,10 +33,14 @@ body {
     font-family: "Roboto";
 }
 
+html {
+    font-size: 0.9vw;
+}
+
 // トップページここから
 
 .top-wrapper {
-   display: flex;
+    display: flex;
     height: 100%;
 }
 
@@ -57,10 +61,10 @@ body {
     &__logo {
         width: 325px;
         height: 84px;
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: bold;
         color: #707070;
-        margin-left: 65px;
+        margin-left: 4%;
     }
 }
 
@@ -68,14 +72,14 @@ body {
     margin-right: 30px;
     display: flex;
     & input {
-        width: 396px;
+        width: 380px;
         height: 44px;
         margin-right: 14px;
         border: 1px solid #707070;
         border-radius: 10px;
     }
     &__btn {
-        width: 136px;
+        width: 130px;
         height: 46px;
         background-color: #F2EDE9;
         border: 1px solid #707070;
@@ -88,8 +92,6 @@ body {
             line-height: 46px;
             display: inline-block;
         }
-
-        
     }
 }
 
@@ -98,37 +100,48 @@ body {
   background: url(/img/search2.svg) no-repeat 10px ;
   background-color: #fff;
   background-size: 6%;
-  
 }
 
 
 // メインコンテンツここから
-
 .main-content {
     display: flex;
     width: auto;
     padding: 120px 0 134px 0;
 }
 
+.thumbnail {
+    position: relative;
+}
 .thumbnail img {
     width: 82vw;
     vertical-align: bottom;
 }
 
+.thumbnail p {
+    position: absolute;
+    top: 45%;
+    left: 6%;
+    color: #ffffffff;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+}
+
 .article-wrap {
     width: 625px;
     font-family: "M+ 1m";
-
+    box-sizing: border-box;
     &--takeout {
         background-image: url(/img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png);
         background-size: cover;
         width: 40%;
-        margin: 0 80px 0 111px
+        margin: 0 5% 0 7%;
     }
     &--eatin {
         width: 40%;
         background-image: url(/img/component.png);
         background-size: cover;
+        
     }
     &__heading {
         color: #EAEAEA;
@@ -147,129 +160,261 @@ body {
         }
     }
     &__text {
+        box-sizing: border-box;
         background-color: #fff;
         opacity: 0.8;
         color: #3c2a10;
+        height: auto;
         margin: 0 20px 20px 20px;
         padding: 20px 45px 34px 19px;
         &-heading {
             font-size: 1.5rem;
-            font-weight: bold;
             margin-bottom: 28px;
         }
         &-sentence {
             font-size: 1rem;
             font-weight: normal;
+            line-height: 1.5rem;
             }
         }
     }
-    .article-wrap2 {
-        margin-top: 679px;
-    }
+
+.article-wrap2 {
+    margin-top: 35vw;
+    box-sizing: border-box;
+}
 
     // マップエリアここから
-    .map-wrap {
-        width: 82vw;
+.map-wrap {
+    width: 82vw;
+    height: 649px;
+    font-family: "M+ 1m";
+    position: relative;
+&__bg {
+    background-image: url(/img/googlemap.png);
+    opacity: 0.9;
+    background-size: contain;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    }
+    &__text {
+        width: 60%;
+        height: auto;
+        background-color: #000000;
+        opacity: 0.6;
+    }
+    &__text__area {
+        width: 80%;
+        margin: 0 auto;
         height: 649px;
-        font-family: "M+ 1m";
-        position: relative;
-    &__bg {
-        background-image: url(/img/googlemap.png);
-        opacity: 0.9;
-        background-size: cover;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        }
-        &__text {
-            width: 60%;
-            height: auto;
-            background-color: #000000;
-            opacity: 0.6;
-        }
-        &__text__area {
-            width: 80%;
-            margin: 0 auto;
-            height: 649px;
-        }
-        &__text__heading {
-            color: white;
-            font-size: 2.25rem;
-            font-weight: bold;
-            font-family: M+ 1m;
-            padding-top: 90px;
-        }
-        &__text__sentence {
-            color: white;
-            margin-top: 100px;
-            font-size: 1rem;
-            line-height: 2rem;
-            font-weight: normal;
-        }
+        overflow: hidden;
     }
-
-    // フッターここから
-    .l-footer {
-        background-image: url(/img/rayer.png);
-        text-align: center;
-        vertical-align: middle;
-        height: 150px;
-        color: #ffffffff;
-        font-family: "M+ 1m";
-        &-wrap {
-            display: flex;
-            justify-content: center;
-            padding-top: 43px;
-            font-size: 1.25rem;
-            font-weight: normal;
-            line-height: 1;
-        }
-        &__info {
-            padding-right: 10px;
-        }
-        &__history {
-            border-left: 1px solid #ffffffff;
-            padding-left: 10px;
-        }
+    &__text__heading {
+        color: white;
+        font-size: 2.25rem;
+        font-weight: bold;
+        font-family: M+ 1m;
+        padding-top: 90px;
     }
+    &__text__sentence {
+        color: white;
+        margin-top: 100px;
+        font-size: 1rem;
+        line-height: 2rem;
+        font-weight: normal;
+    }
+}
 
-    .copyright {
-        margin-top: 39px;
-        font-size: 14px;
+// フッターここから
+.l-footer {
+    background-image: url(/img/rayer.png);
+    text-align: center;
+    vertical-align: middle;
+    height: 150px;
+    color: #ffffffff;
+    font-family: "M+ 1m";
+    &-wrap {
+        display: flex;
+        justify-content: center;
+        padding-top: 43px;
+        font-size: 1.25rem;
         font-weight: normal;
         line-height: 1;
     }
+    &__info {
+        padding-right: 10px;
+    }
+    &__history {
+        border-left: 1px solid #ffffffff;
+        padding-left: 10px;
+    }
+}
 
-    // サイドメニューここから
-    .l-sidemenu {
-        background-color: #F2EDE9;
-        width: 18vw;
-        min-height: 100%;
-        &__heading {
-            font-size: 34px;
-            color: #707070;
-            margin: 86px 0 87px 50px;
+.copyright {
+    margin-top: 39px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+}
+
+// サイドメニューここから
+.l-sidemenu {
+    background-color: #F2EDE9;
+    width: 18vw;
+    min-height: 100%;
+    &__heading {
+        font-size: 2rem;
+        color: #707070;
+        margin: 86px 0 87px 50px;
+    }
+    &__title {
+        font-size: 1.5rem;
+        color: #707070;
+        font-family: "M+1m";
+        margin: 0 0 40px 49px;
+    }
+    &__list {
+        font-size: 1.2rem;
+        font-weight: normal;
+        font-family: "M+1m";
+        color: #707070;
+        list-style: none;
+        margin:0 0 30px 66px;
+        line-height: 1;
+        &:last-child {
+            margin-bottom: 56px;
         }
-        &__title {
-            font-size: 24px;
-            color: #707070;
-            font-family: "M+1m";
-            margin: 0 0 40px 49px;
+    }
+}
+
+// レスポンシブここから
+    @media screen and (max-width: 840px) {
+html {
+    font-size: 1.5vw;
+}
+.l-sidemenu {
+    display: none;
+}
+
+.left {
+    width: 100%;
+}
+
+// ヘッダーここから
+.l-header {
+    display: block;
+    text-align: center;
+    padding-top: 40px;
+    box-sizing: border-box;
+    margin-right: 0;
+    &__logo {
+        font-size: 3.5rem;
+        margin: auto;
+    }
+}
+
+.c-search {
+    margin-right: 0px;
+    display: flex;
+    justify-content: center;
+    & input {
+        width: 380px;
+        height: 44px;
+        margin-right: 14px;
+
+    }
+    &__btn {
+        width: 130px;
+        height: 46px;
+        a {
+            font-size: 1.5rem;
+            line-height: 46px;
         }
-        &__list {
-            font-size: 20px;
-            font-weight: normal;
-            font-family: "M+1m";
-            color: #707070;
-            list-style: none;
-            margin:0 0 30px 66px;
+    }
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.main-content {
+    padding: 50px 0 20px 0;
+}
+
+.article-wrap2 {
+    margin-top: 250px;
+}
+
+.article-wrap {
+    &--takeout {
+        width: 45%;
+        margin: 0 4% 0 3%;
+    }
+    &--eatin {
+        width: 45%;
+    }
+    &__heading {
+        font-size: 2.5rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin: 20px 0 0 19px;
+        position: relative;
+        &::before {
+            content:"";
+            position: absolute;
+            border: 1.5px solid #fff;
+            bottom: -25px;
+            left: 0;
+            width: 40px;
+        }
+    }
+    &__text {
+        margin: 0 20px 20px 20px;
+        padding: 20px 30px 15px 19px;
+        line-height: 3;
+        &-heading {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
             line-height: 1;
-            &:last-child {
-                margin-bottom: 56px;
+        }
+        &-sentence {
+            font-size: 0.9rem;
             }
+        }
+    }
+    // マップエリアここから
+.map-wrap {
+    width: 100%;
+    &__bg {
+    }
+    &__text {
+        width: 100%;
+        height: auto;
+    }
+    &__text__area {
+        width: 90%;
+        margin: 0 auto;
+        height: 649px;
+        overflow: hidden;
+    }
+    &__text__heading {
+        color: white;
+        font-size: 2.25rem;
+        padding-top: 90px;
+    }
+    &__text__sentence {
+        color: white;
+        margin-top: 100px;
+        font-size: 1rem;
+        line-height: 3rem;
+        }
+    }
+.map-wrap {
+        width: 100%;
         }
     }
 
 
 
-    
