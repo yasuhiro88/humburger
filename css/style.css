@@ -212,8 +212,9 @@ html {
 
 .map-wrap__bg {
   background-image: url(../img/googlemap.png);
+  background-repeat: no-repeat;
   opacity: 0.9;
-  background-size: contain;
+  background-size: cover;
   background-color: #000;
   position: absolute;
   top: 0;
@@ -320,7 +321,11 @@ html {
 .l-sidemenu__list:last-child {
   margin-bottom: 56px;
 }
-
+@media screen and (min-width: 841px) {
+  .zdo_drawer_menu {
+    display: none;
+  }
+}
 @media screen and (max-width: 840px) {
   html {
     font-size: 1.5vw;

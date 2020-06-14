@@ -192,8 +192,9 @@ html {
     position: relative;
 &__bg {
     background-image: url(../img/googlemap.png);
+    background-repeat: no-repeat;
     opacity: 0.9;
-    background-size: contain;
+    background-size: cover;
     background-color: #000;
     position: absolute;
     top: 0;
