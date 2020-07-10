@@ -6,117 +6,75 @@
     <title>Hamburger</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <script src="https://kit.fontawesome.com/055ef893dd.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/055ef893dd.js" crossorigin="anonymous"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="./js/zdo_drawer_menu.js"></script>
-    <link rel="stylesheet" href="./css/zdo_drawer_menu.css">
+    <!-- <script src="./js/jquery-3.4.1.min.js"></script> -->
+    <script src="./js/hamburger.js"></script>
+    <!-- <link rel="stylesheet" href="./css/style-drw.css"> -->
 </head>
 <body>
-    <div class="top-wrapper">
-    <div class="left">
+    <div class="l-top-wrapper">
+    <div class="l-left">
         <header class="l-header">
             <div class="l-header__logo">Hamburger</div>
-            <div class="c-search">
-                <input type="text" name="s">
-                <div class="c-search__btn">
-                    <a href="#">検索</a>
-                </div>
-            </div>
-
-            <!-- ドロワーメニューここから -->
-            <div class="zdo_drawer_menu">
-	
-                <div class="zdo_drawer_bg"></div>
-                <button type="button" class="zdo_drawer_button">
-                    
-                    <span class="zdo_drawer_menu_text zdo_drawer_text">Menu</span>
-                    
-                    <span class="zdo_drawer_close zdo_drawer_bar zdo_drawer_bar1"></span>
-                    <span class="zdo_drawer_close zdo_drawer_bar zdo_drawer_bar2"></span>
-
-                </button>
-                <nav class="zdo_drawer_nav_wrapper">
-                    <ul class="zdo_drawer_nav">
-                    <ul>
-                        <h2 class="l-sidemenu__title">バーガー</h2>
-                        <li class="l-sidemenu__list">ハンバーガー</li>
-                        <li class="l-sidemenu__list">チーズバーガー</li>
-                        <li class="l-sidemenu__list">テリヤキバーガー</li>
-                        <li class="l-sidemenu__list">アボガドバーガー</li>
-                        <li class="l-sidemenu__list">フィッシュバーガー</li>
-                        <li class="l-sidemenu__list">ベーコンバーガー</li>
-                        <li class="l-sidemenu__list">チキンバーガー</li>
-                    </ul>
-                    <ul>
-                        <h2 class="l-sidemenu__title">サイド</h2>
-                        <li class="l-sidemenu__list">ポテト</li>
-                        <li class="l-sidemenu__list">サラダ</li>
-                        <li class="l-sidemenu__list">ナゲット</li>
-                        <li class="l-sidemenu__list">コーン</li>
-                    </ul>
-                    <ul>
-                        <h2 class="l-sidemenu__title">ドリンク</h2>
-                        <li class="l-sidemenu__list">コーラ</li>
-                        <li class="l-sidemenu__list">ファンタ</li>
-                        <li class="l-sidemenu__list">オレンジ</li>
-                        <li class="l-sidemenu__list">アップル</li>
-                        <li class="l-sidemenu__list">紅茶 (Ice/Hot)</li>
-                        <li class="l-sidemenu__list">コーヒー (Ice/Hot)</li>
-                    </ul>
-                    </ul>
-                </nav>
-            </div>
-            
+            <form class="p-search" id="searchform">
+                <input class="p-search__keyword" type="text" name="s">
+                <input class="p-search__btn" id="searchbtn" type="submit" value="検索">
+            </form>
+            <button class="p-hamburger p-gmenu--bt is-hamburger">
+                <span>Menu</span>
+            </button>
         </header>
 
-            <div class="thumbnail">
+            <div class="p-thumbnail">
                 <img src="./img/3ba5a44414bb3c0885c27ff614596431.png" alt="トップ画像">
                 <p>ダミーサイト</p>
             </div>
 
             <!-- メインコンテンツここから -->
-            <div class="main-content">
-                <article class="article-wrap article-wrap--takeout">
-                    <h2 class="article-wrap__heading">
+            <div class="l-main-content">
+                <article class="p-article-wrap p-article-wrap--takeout">
+                    <h2 class="p-article-wrap__heading">
                         Take Out
                     </h2>
-                    <div class="article-wrap2">
-                    <div class="article-wrap__text">
-                        <h3 class="article-wrap__text-heading">小見出しが入ります</h3>
-                        <p class="article-wrap__text-sentence">テキストが入ります。　テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                    <div class="p-article-wrap2">
+                    <div class="p-article-wrap__text">
+                        <h3 class="p-article-wrap__text-heading">小見出しが入ります</h3>
+                        <p class="p-article-wrap__text-sentence">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                     </div>
-                    <div class="article-wrap__text">
-                        <h3 class="article-wrap__text-heading">小見出しが入ります</h3>
-                        <p class="article-wrap__text-sentence">テキストが入ります。　テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                    <div class="p-article-wrap__text">
+                        <h3 class="p-article-wrap__text-heading">小見出しが入ります</h3>
+                        <p class="p-article-wrap__text-sentence">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                     </div>
                 </div>
                 </article>
-                <article class="article-wrap article-wrap--eatin">
-                    <h2 class="article-wrap__heading">
+                <article class="p-article-wrap p-article-wrap--eatin">
+                    <h2 class="p-article-wrap__heading">
                         Eat In
                     </h2>
-                    <div class="article-wrap2">
-                    <div class="article-wrap__text">
-                        <h3 class="article-wrap__text-heading">小見出しが入ります</h3>
-                        <p class="article-wrap__text-sentence">テキストが入ります。　テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                    <div class="p-article-wrap2">
+                    <div class="p-article-wrap__text">
+                        <h3 class="p-article-wrap__text-heading">小見出しが入ります</h3>
+                        <p class="p-article-wrap__text-sentence">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                     </div>
-                    <div class="article-wrap__text">
-                        <h3 class="article-wrap__text-heading">小見出しが入ります</h3>
-                        <p class="article-wrap__text-sentence">テキストが入ります。　テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                    <div class="p-article-wrap__text">
+                        <h3 class="p-article-wrap__text-heading">小見出しが入ります</h3>
+                        <p class="p-article-wrap__text-sentence">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                     </div>
                     </div>
                 </article>
             </div>
 
             <!-- マップエリアここから -->
-                <div class="map-wrap">
-                    <div class="map-wrap__bg">
-                     <div class="map-wrap__text">
-                         <div class="map-wrap__text__area">
-                         <div class="map-wrap__text__heading">
+                <div class="p-map-wrap">
+                    <div class="p-map-wrap__bg">
+                     <div class="p-map-wrap__text">
+                         <div class="p-map-wrap__text__area">
+                         <div class="p-map-wrap__text__heading">
                              <h2>見出しが入ります</h2>
+                             
                         </div>
-                             <div class="map-wrap__text__sentence">
+                             <div class="p-map-wrap__text__sentence">
                                  <p>
                                  テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                          </div>
@@ -127,9 +85,10 @@
             </div>
 
             <!-- サイドメニューここから -->
-            <div class="l-sidemenu">
+             <div class="c-zdo_drawer_bg"></div>
+            <div class="p-gmenu">
+                <ul class="list">
                     <p class="l-sidemenu__heading">Menu</p>
-                    <ul>
                         <h2 class="l-sidemenu__title">バーガー</h2>
                         <li class="l-sidemenu__list">ハンバーガー</li>
                         <li class="l-sidemenu__list">チーズバーガー</li>
@@ -138,15 +97,11 @@
                         <li class="l-sidemenu__list">フィッシュバーガー</li>
                         <li class="l-sidemenu__list">ベーコンバーガー</li>
                         <li class="l-sidemenu__list">チキンバーガー</li>
-                    </ul>
-                    <ul>
                         <h2 class="l-sidemenu__title">サイド</h2>
                         <li class="l-sidemenu__list">ポテト</li>
                         <li class="l-sidemenu__list">サラダ</li>
                         <li class="l-sidemenu__list">ナゲット</li>
                         <li class="l-sidemenu__list">コーン</li>
-                    </ul>
-                    <ul>
                         <h2 class="l-sidemenu__title">ドリンク</h2>
                         <li class="l-sidemenu__list">コーラ</li>
                         <li class="l-sidemenu__list">ファンタ</li>
@@ -154,7 +109,7 @@
                         <li class="l-sidemenu__list">アップル</li>
                         <li class="l-sidemenu__list">紅茶 (Ice/Hot)</li>
                         <li class="l-sidemenu__list">コーヒー (Ice/Hot)</li>
-                    </ul>
+                </ul>
             </div>
          </div>
 
@@ -165,7 +120,7 @@
                  <p class="l-footer__info">ショップ情報</p>
                  <span class="l-footer__history">ヒストリー</span>
                 </div>
-                 <div class="copyright"><small> Copyright RaiseTech</small></div>
+                 <div class="p-copyright"><small> Copyright RaiseTech</small></div>
              </div>
          </footer>
     

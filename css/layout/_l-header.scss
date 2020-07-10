@@ -1,0 +1,32 @@
+.l-header {
+    width: auto;
+    height: 217px;
+    background-color: #fff7ef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 0;
+    position: relative;
+    &__logo {
+        width: 325px;
+        height: 84px;
+        font-size: 3rem;
+        font-weight: bold;
+        color: #707070;
+        margin-left: 4%;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .l-header {
+        display: block;
+        text-align: center;
+        padding-top: 40px;
+        box-sizing: border-box;
+        margin-right: 0;
+        &__logo {
+            font-size: 3.5rem;
+            margin: auto;
+        }
+    }
+}
